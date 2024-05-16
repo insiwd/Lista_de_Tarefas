@@ -17,5 +17,8 @@ public class App {
         System.out.println("existem " + ls.obterTarefasConcluidas() + " tarefas concluidas!");
         System.out.println("existem " + ls.obterTarefasPendentes() + " tarefas pendentes!");
 
+        ls.marcarTarefaConcluida("terminar atividades");
+        System.out.println("existem " + ls.obterTarefasConcluidas() + " tarefas concluidas!");
+
     }
 }

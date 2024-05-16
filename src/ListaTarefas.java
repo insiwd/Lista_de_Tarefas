@@ -50,4 +50,12 @@ public class ListaTarefas {
     }
     return tarefasPendentes;
   }
+
+  public void marcarTarefaConcluida(String descricao) {
+    for (Tarefa t : listaTarefasSet) {
+      if (!t.isTarefaConcluida() && t.getDescricao().equalsIgnoreCase(descricao)) {
+        t.setTarefaConcluida(true);
+      }
+    }
+  }
 }
