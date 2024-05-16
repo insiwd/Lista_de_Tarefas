@@ -12,6 +12,17 @@ public class ListaTarefas {
     listaTarefasSet.add(new Tarefa(descricao, false));
   }
 
+  public void removerTarefa(String descricao) {
+    Tarefa tarefasParaRemover = null;
+    if (!listaTarefasSet.isEmpty()) {
+      for (Tarefa t : listaTarefasSet) {
+        tarefasParaRemover = t;
+        break;
+      }
+    }
+    listaTarefasSet.remove(tarefasParaRemover);
+  }
+
   public void exibirTarefas() {
     System.out.println(listaTarefasSet);
   }
