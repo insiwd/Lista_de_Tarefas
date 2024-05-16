@@ -26,4 +26,8 @@ public class ListaTarefas {
   public void exibirTarefas() {
     System.out.println(listaTarefasSet);
   }
+
+  public int contarTarefas() {
+    return listaTarefasSet.size();
+  }
 }
