@@ -58,4 +58,17 @@ public class ListaTarefas {
       }
     }
   }
+
+  public void marcarTarefaPendente(String descricao) {
+    for (Tarefa t : listaTarefasSet) {
+      if (t.getDescricao().equalsIgnoreCase(descricao)) {
+        t.setTarefaConcluida(true);
+      }
+    }
+  }
+
+  public void limparListaTarefas() {
+    listaTarefasSet.clear();
+  }
+
 }
