@@ -30,4 +30,15 @@ public class ListaTarefas {
   public int contarTarefas() {
     return listaTarefasSet.size();
   }
+
+  public Set<Tarefa> obterTarefasConcluidas() {
+    Set<Tarefa> tarefasConcluidas = new HashSet<>();
+    for (Tarefa t : listaTarefasSet) {
+      if (t.isTarefaConcluida()) {
+        tarefasConcluidas.add(t);
+        break;
+      }
+    }
+    return tarefasConcluidas;
+  }
 }
