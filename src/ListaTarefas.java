@@ -36,9 +36,18 @@ public class ListaTarefas {
     for (Tarefa t : listaTarefasSet) {
       if (t.isTarefaConcluida()) {
         tarefasConcluidas.add(t);
-        break;
       }
     }
     return tarefasConcluidas;
+  }
+
+  public Set<Tarefa> obterTarefasPendentes() {
+    Set<Tarefa> tarefasPendentes = new HashSet<>();
+    for ( Tarefa t : listaTarefasSet ) {
+      if (!t.isTarefaConcluida()) {
+        tarefasPendentes.add(t);
+      }
+    }
+    return tarefasPendentes;
   }
 }

@@ -14,7 +14,8 @@ public class App {
         ls.exibirTarefas();
         System.out.println("existem " + ls.contarTarefas() + " tarefas!");
 
-
+        System.out.println("existem " + ls.obterTarefasConcluidas() + " tarefas concluidas!");
+        System.out.println("existem " + ls.obterTarefasPendentes() + " tarefas pendentes!");
 
     }
 }
